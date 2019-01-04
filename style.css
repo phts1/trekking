@@ -181,50 +181,7 @@ body{
 		margin: -20px 0 0 170px;
 	}
 }
-.content {
-	width: 100%;
-	height: 143px;
-	background-color: #f5f6f7;
-}
-.checkbox__text1 {
-	margin: -23px 0 0 19px;
-}
-.content__checkbox1 {
-	display: block;
-	position: absolute;
-	margin: 60px 0 0 96px;
-	color: #333333;
-	font-family: "Quicksand Bold", ;
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-.checkbox__text2 {
-	margin: -23px 0 0 19px;
-}
-.content__checkbox2 {
-	display: block;
-	position: absolute;
-	margin: 60px 0 0 214px;
-	color: #333333;
-	font-family: "Quicksand Bold", ;
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-.checkbox__text3 {
-	margin: -23px 0 0 19px;
-}
-.content__checkbox3 {
-	display: block;
-	position: absolute;
-	margin: 60px 0 0 368px;
-	color: #333333;
-	font-family: "Quicksand Bold", ;
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: uppercase;
-}
+
 .top_button1 {
 	text-decoration: none;
 	outline: none;
@@ -280,7 +237,6 @@ body{
 	background-color: #fff;
 }
 .sale__item {
-	display: block;
 	position: relative;
 	flex-basis: 320px;
 	height: 378px;
@@ -288,31 +244,32 @@ body{
 	list-style-type: none;
 	border-radius: 3px;
 	background-color: #f5f6f7;
-	margin: 50px 50px 50px 50px;
+	margin: 50px 0 50px 15px;
 	-moz-box-sizing: border-box; 
     box-sizing: border-box;
     
 }
 .sale__item:hover  {
 	border: 6px solid #aa9b77;
+	
 }
 .sale__man {
 	
-	margin: 200px 64px 0 66px;
+	margin: 200px 64px 0 26px;
 }
 .sale__woman {
 	
-	margin: 150px 64px 81px 66px;
+	margin: 150px 64px 81px 26px;
 }
 .sale__children {
 	display: none;
-	margin: 200px 64px 221px 66px;
+	margin: 200px 64px 221px 26px;
 }
 .sale__man-product, .sale__woman-product, .sale__children-product {
 	display:flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    
     
 }
 .sale__img {
@@ -358,7 +315,7 @@ body{
 .slide2 {
 	position: absolute;
 	left: 0;
-	margin: 0 0 0 160px;
+	margin: 0 0 0 120px;
 }
 .slide2__sum {
 
@@ -430,10 +387,10 @@ body{
 }
 @media only screen and (max-width: 625px) {
 	.sale__man {
-		margin-left: -65px;
+		margin-left: 5px;
 	}
 	.sale__woman {
-		margin-left: -65px;
+		margin-left: 5px;
 	}
 	.slide2 {
 		margin: 0 0 0 25px;
@@ -445,6 +402,13 @@ body{
 	right: auto;
 	left: 0;
 	margin: 0 0 0 25px;
+
+}
+.sale__line {
+		
+		
+		margin: -94px 0px 43px 10px;
+	}
 }
 	
 }
@@ -452,12 +416,9 @@ body{
 	.sale__line {
 		
 		
-		margin: -94px 0px 43px 90px;
+		margin: -94px 0px 43px 10px;
 	}
-	.sale__item{
-		min-width: 100%;
-		
-	}
+	
 	.sale-item__coast {
 		right: auto;
 		left: 0;
@@ -600,4 +561,73 @@ text-transform: uppercase;
 		left: 0;
 		margin: 320px 0 0 135px;
 	}
+}
+input[type=checkbox], input[type=radio] {display: none;}
+
+input[type=checkbox] + label:before {
+    content: "";
+  
+    color: transparent;
+    display: inline-block;
+    border: 2px solid #aa9b77;
+    font-size: 10px;    
+    line-height: 12px;  
+    margin: -5px 15px 0 0;
+    height: 24px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+input[type=checkbox]:checked + label:before {
+  color:#aa9b77;
+   content: "";
+
+    background-image: url(img/fa-check.png) ;
+   background-size: 70%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+
+}
+.content {
+	width: 100%;
+	height: 143px;
+	background-color: #f5f6f7;
+}
+.content__checkbox1 {
+	margin:;
+}
+.content__label1 {
+	display: block;
+	position: absolute;
+	margin: 60px 0 0 96px;
+	color: #333333;
+	font-family: "Quicksand Bold", ;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.content__label2 {
+	display: block;
+	position: absolute;
+	margin: 60px 0 0 214px;
+	color: #333333;
+	font-family: "Quicksand Bold", ;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.content__label3 {
+	display: block;
+	position: absolute;
+	margin: 60px 0 0 368px;
+	color: #333333;
+	font-family: "Quicksand Bold", ;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
