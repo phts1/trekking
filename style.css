@@ -181,6 +181,46 @@ body{
 		margin: -20px 0 0 170px;
 	}
 }
+.content {
+	width: 100%;
+	height: 143px;
+	background-color: #f5f6f7;
+}
+.content__checkbox1 {
+	margin:;
+}
+.content__label1 {
+
+	position: absolute;
+	margin: 60px 0 0 96px;
+	color: #333333;
+	font-family: "Quicksand Bold", ;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.content__label2 {
+
+	position: absolute;
+	margin: 60px 0 0 214px;
+	color: #333333;
+	font-family: "Quicksand Bold", ;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.content__label3 {
+
+	position: absolute;
+	margin: 60px 0 0 368px;
+	color: #333333;
+	font-family: "Quicksand Bold", ;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
 
 .top_button1 {
 	text-decoration: none;
@@ -213,22 +253,24 @@ body{
 	.content {
 		height: 300px;
 	}
+	
 }
-@media only screen and (max-width: 560px) {
-	.content__checkbox1 {
+@media only screen and (max-width: 600px) {
+	
+.content__label1 {
 		margin: 60px 0 0 50px;
 	}
-	.content__checkbox2 {
+	.content__label2 {
 		margin: 100px 0 0 50px;
 	}
-	.content__checkbox3 {
+	.content__label3 {
 		margin: 140px 0 0 50px;
 	}
 	.top_button1 {
 	
   		margin: 180px 0px 0 50px;
   		
-	}
+}
 }
 .sale {
 
@@ -440,7 +482,7 @@ body{
 .about__lorem {
 	
 	text-align: center;
-	min-width:350px;
+	min-width:250px;
 	color: #424242;
 	font-family: "Quicksand Bold", ;
 	font-size: 16px;
@@ -494,7 +536,7 @@ text-transform: uppercase;
 }
 .trekking__lorem {
 	position: absolute;
-	width: 370px;
+	width: 340px;
 	height: 100px;
 	margin: 146px 0 0 65px;
 	color: #ffffff;
@@ -503,6 +545,7 @@ text-transform: uppercase;
 	font-weight: 600;
 	line-height: 20px;
 	text-transform: uppercase;
+
 }
 .trekking__title {
 	position: absolute;
@@ -590,44 +633,4 @@ input[type=checkbox]:checked + label:before {
   background-origin: content-box;
   background-position: center;
 
-}
-.content {
-	width: 100%;
-	height: 143px;
-	background-color: #f5f6f7;
-}
-.content__checkbox1 {
-	margin:;
-}
-.content__label1 {
-	display: block;
-	position: absolute;
-	margin: 60px 0 0 96px;
-	color: #333333;
-	font-family: "Quicksand Bold", ;
-	font-size: 18px;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.content__label2 {
-	display: block;
-	position: absolute;
-	margin: 60px 0 0 214px;
-	color: #333333;
-	font-family: "Quicksand Bold", ;
-	font-size: 18px;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.content__label3 {
-	display: block;
-	position: absolute;
-	margin: 60px 0 0 368px;
-	color: #333333;
-	font-family: "Quicksand Bold", ;
-	font-size: 18px;
-	font-weight: 600;
-	text-transform: uppercase;
 }
