@@ -1,13 +1,11 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8">
       <title>Trekking</title>
       <link href="style.css" type="text/css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
    </head>
    <body>
@@ -15,38 +13,42 @@
          <div class="main-overlay">
          </div>
          <div class="header">
-            <div class="logo" id="logo">
-               <a href="#" class="logo-link"><img src="img/Logo.png" alt="logo"></a>
+            <div class="logo">
+               <a href="#"><img src="img/Logo.png" alt="logo"></a>
             </div>
             <div class="toggle">
+
                <label for="toggle">&#9776;</label>
                <input type="checkbox" id="toggle"/>
                <div class="menu">
-                  <a href="#" class="menu_link"><b>Home</b></a>
-                  <a href="#" class="menu_link"><b>Products</b></a>
+                  <a href="#" class="menu__link"><b>Home</b></a>
+                  <a href="#" class="menu__link"><b>Products</b></a>
                </div>
             </div>
             <div class="cart">
-               <a href="#" class="cart-link"><img src="img/cart.png" alt="logo"></a>
+               <a href="#" class="cart__link"><img src="img/cart.png" alt="logo"></a>
             </div>
          </div>
          <div class="maintext">
-            <h1 class="maintext_title" align="center"><b>Our clothing, your comfort</b></h1>
-            <p class="maintext_para" align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />Aut harum dolor, reprehenderit et nulla omnis laudantium<br />minus alias quos corporis.</p>
+            <h1 class="maintext__title"><b>Our clothing, your comfort</b></h1>
+            <p class="maintext__para"
+            >Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />Aut harum dolor, reprehenderit et nulla omnis laudantium<br />minus alias quos corporis.</p>
          </div>
          <div class="down"><a href="#"><img src="img/down.png" alt=""></a></div>
       </div>
     <div class="content">
+    		
+
   <input type="checkbox" id="Men" name="clothers" class="content__checkbox1" />
   <label for="Men" class="content__label1">Men</label>
-  
+  		
   <input type="checkbox" id="Women" name="clothers" class="content__checkbox2"/>
   <label for="Women" class="content__label2">Women</label>
-
+		
   <input type="checkbox" id="Children" name="clothers" class="content__checkbox3"/>
   <label for="Children" class="content__label3">Children</label>
 
-         <a href="#" class="top_button1"><b>See All Products</b></a>   	
+         <a href="#" class="content__button"><b>See All Products</b></a>   	
       </div>
       <div class="sale">
          <div class="sale__man">
@@ -58,56 +60,56 @@
             </div>
             <ul class="sale__man-product">
                <li class="sale__item">
-                  <p class="sale-item__name">T-shirt</p>
-                  <p class="sale-item__coast">5,00&nbsp;€</i></p>
-                  <p class="sale-item__size">Size<i class="fas fa-angle-down"></i></p>
-                  <div class="sale-item__color">
-                     <img src="product/Ellisse_1.png">
-                     <img src="product/Ellisse_2.png">
-                     <img src="product/Ellisse_3.png">
+                  <p class="sale__item-name">T-shirt</p>
+                  <p class="sale__item-coast">5,00&nbsp;€</i></p>
+                  <p class="sale__item-size">Size<a href="#" class="sale__item-size size"><i class="fas fa-angle-down"></i></a></p>
+                  <div class="sale__item-color">
+                     <a href="#"><img src="product/Ellisse_1.png"></a>
+                     <a href="#"><img src="product/Ellisse_2.png"></a>
+                     <a href="#"><img src="product/Ellisse_3.png"></a>
                   </div>
                   <img src="product/l_1.png" class="sale__img">
                </li>
                <li class="sale__item">
-                  <p class="sale-item__name">Pants Forclaz</p>
-                  <p class="sale-item__coast">30,00&nbsp;€</i></p>
-                  <p class="sale-item__size">Size<i class="fas fa-angle-down"></i></p>
+                  <p class="sale__item-name">Pants Forclaz</p>
+                  <p class="sale__item-coast">30,00&nbsp;€</i></p>
+                  <p class="sale__item-size">Size<a href="#" class="sale__item-size size"><i class="fas fa-angle-down"></i></a></p>
                   <img src="product/l_2.png" class="sale__img">
                </li>
                <li class="sale__item">
-                  <p class="sale-item__name">Backpack</p>
-                  <p class="sale-item__coast">60,00&nbsp;€</i></p>
-                  <p class="sale-item__size">Size<i class="fas fa-angle-down"></i></p>
+                  <p class="sale__item-name">Backpack</p>
+                  <p class="sale__item-coast">60,00&nbsp;€</i></p>
+                  <p class="sale__item-size">Size<a href="#" class="sale__item-size size"><i class="fas fa-angle-down"></i></a></p>
                   <img src="product/l_3.png" class="sale__img">
                </li>
               
             </ul>
          </div>
          <div class="sale__woman">
-            <h1 class="sale__line">Women</h1>
+            <h1 class="sale__line" align="right">Women</h1>
             <div class="sale__woman slide2">
                <p class="slide2__sum">1 / 5</p>
                <i class="fas fa-chevron-left"></i>
                <i class="fas fa-chevron-right"></i>
             </div>
             <ul class="sale__woman-product">
-               <li class="sale__item sale-item">
-                  <p class="sale-item__name">Giacket</p>
-                  <p class="sale-item__coast">60,00&nbsp;€</i></p>
-                  <p class="sale-item__size">Size<i class="fas fa-angle-down"></i></p>
+               <li class="sale__item">
+                  <p class="sale__item-name">Giacket</p>
+                  <p class="sale__item-coast">60,00&nbsp;€</i></p>
+                  <p class="sale__item-size">Size<a href="#" class="sale__item-size size"><i class="fas fa-angle-down"></i></a></p>
                   <img src="product/l_4.png" class="sale__img">
                </li>
                <li class="sale__item">
-                  <p class="sale-item__name">Trecking Shoes</p>
-                  <p class="sale-item__coast">80,00&nbsp;€</i></p>
-                  <p class="sale-item__size">Size<i class="fas fa-angle-down"></i></p>
+                  <p class="sale__item-name">Trecking Shoes</p>
+                  <p class="sale__item-coast">80,00&nbsp;€</i></p>
+                  <p class="sale__item-size">Size<a href="#" class="sale__item-size size"><i class="fas fa-angle-down"></i></a></i></p>
                   <img src="product/l_5.png" class="sale__img">
                </li>
                <li class="sale__item">
-                  <p class="sale-item__name">T-shirt</p>
-                  <p class="sale-item__coast">20,00&nbsp;€</i></p>
-                  <p class="sale-item__size">Size<i class="fas fa-angle-down"></i></p>
-                  <div class="sale-item__color">
+                  <p class="sale__item-name">T-shirt</p>
+                  <p class="sale__item-coast">20,00&nbsp;€</i></p>
+                  <p class="sale__item-size">Size<a href="#" class="sale__item-size size"><i class="fas fa-angle-down"></i></a></p>
+                  <div class="sale__item-color">
                      <img src="product/Color-1.png">
                      <img src="product/Color-2.png">
                   </div>
@@ -118,9 +120,9 @@
          <div class="sale__children">
             <h1 class="sale__line">Children</h1>
             <ul class="sale__children-product">
-               <li class="sale__item"></li>
-               <li class="sale__item"></li>
-               <li class="sale__item"></li>
+               <li class="sale__item-name"></li>
+               <li class="sale__item-coast"></li>
+               <li class="sale__item-size"></li>
             </ul>
          </div>
          <div class="about">

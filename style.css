@@ -52,7 +52,7 @@ body{
 	margin: 63px 145px;
 }
 
-.menu_link {
+.menu__link {
 	text-decoration: none;
 	color: #fff;
 	font-size: 18px;
@@ -61,7 +61,7 @@ body{
 	font-family: 'Quicksand Bold', ;
 	
 }
-.menu_link:hover {color: red;}
+.menu__link:hover {color: red;}
 .logo {
 	position: absolute;
 	top: 0;
@@ -87,7 +87,7 @@ body{
 
 
 }
-.maintext_title {
+.maintext__title {
 	font-family: 'Quicksand Bold', ;
 	font-size: 60px;
 	font-weight: 600;
@@ -95,7 +95,7 @@ body{
 	line-height: 55px;
 	margin-top: 60px;
 }
-.maintext_para {
+.maintext__para {
 	position: relative;
 	font-family: 'Quicksand Book', ;
 	font-size: 20px;
@@ -152,7 +152,7 @@ body{
 		text-align: left;
 
 	}
-	.menu_link {
+	.menu__link {
 		
 		margin: 0 1px 0 0;
 	}
@@ -222,7 +222,7 @@ body{
 	text-transform: uppercase;
 }
 
-.top_button1 {
+.content__button {
 	text-decoration: none;
 	outline: none;
 	position: absolute;
@@ -243,7 +243,7 @@ body{
 }
 
 @media only screen and (max-width: 820px) {
-	.top_button1 {
+	.content__button {
 		right: auto;
 		left: 0;
   	
@@ -266,7 +266,7 @@ body{
 	.content__label3 {
 		margin: 140px 0 0 50px;
 	}
-	.top_button1 {
+	.content__button {
 	
   		margin: 180px 0px 0 50px;
   		
@@ -282,37 +282,39 @@ body{
 	position: relative;
 	flex-basis: 320px;
 	height: 378px;
-	min-width: 320px;
+	min-width: 220px;
 	list-style-type: none;
 	border-radius: 3px;
 	background-color: #f5f6f7;
-	margin: 50px 0 50px 15px;
+	margin: 50px 0 50px 0;
 	-moz-box-sizing: border-box; 
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
+    overflow: hidden;
+}
+.sale__item:nth-child(2) {
+
+	margin: 50px 150px 0 150px;
 }
 .sale__item:hover  {
 	border: 6px solid #aa9b77;
 	
 }
 .sale__man {
-	
-	margin: 200px 64px 0 26px;
+
+	margin: 200px 64px 0 0px;
 }
 .sale__woman {
 	
-	margin: 150px 64px 81px 26px;
+	margin: 150px 64px 81px 0px;
 }
 .sale__children {
 	display: none;
-	margin: 200px 64px 221px 26px;
+	margin: 200px 64px 221px 0px;
 }
 .sale__man-product, .sale__woman-product, .sale__children-product {
 	display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
+    flex-wrap: nowrap;
+    justify-content: center;   
 }
 .sale__img {
 	margin: auto;
@@ -325,7 +327,7 @@ body{
   position: relative;
   z-index: 1;
   overflow: hidden;
-  text-align: left;
+  
   margin: -94px 50px 43px	90px;
   text-transform: uppercase;
   font-family: "Quicksand Bold", ;
@@ -367,22 +369,27 @@ body{
 	font-weight: 600;
 }
 
+.sale__line:before,
 .sale__line:after {
   content: '';
   display: inline-block;
+  vertical-align: middle;
+  box-sizing: 
+  border-box; 
   width: 100%;
   height: 2px;
-  background-color: #cccccc;
-  z-index: -1;
-  position: relative;
-  vertical-align: middle;
+  background: #cccccc; 
+  border: solid #FFF;
+  border-width: 0 10px;
 }
+.sale__line:before {
 
+   margin-left: -100%;
+}
 .sale__line:after {
-  left: 15px;
-  margin: 0 -100% 0 0;
+  margin-right: -100%;
 }	
-	.sale-item__name {
+	.sale__item-name {
 	position: absolute;
 	bottom: 0;
 	margin: 0 0 29px 25px;
@@ -392,7 +399,7 @@ body{
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.sale-item__coast {
+.sale__item-coast {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -404,7 +411,7 @@ body{
 	text-transform: uppercase;
 	padding-right: 5px;
 }
-.sale-item__size {
+.sale__item-size {
 	position: absolute;
 	margin: 30px 0 0px 24px;
 	color: #424242;
@@ -414,7 +421,7 @@ body{
 	text-transform: uppercase;
 	cursor: pointer;
 }
-.sale-item__color {
+.sale__item-color {
 	position: absolute;
 	right: 0;
 	margin: 25px 25px 0 0;
@@ -427,6 +434,30 @@ body{
 .fa-angle-down:hover {
 	cursor: pointer;
 }
+@media only screen and (max-width: 1240px) {
+.sale__item-coast {
+		right: auto;
+		left: 0;
+		margin: 10px 0 0 25px;
+	}
+} 
+@media only screen and (max-width: 1100px) {
+	.sale__item:nth-child(2) {
+
+	margin: 50px 20px 0 20px;
+}
+	.sale {
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.sale__man-product, .sale__woman-product, .sale__children-product {
+	display:flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+}
+
 @media only screen and (max-width: 625px) {
 	.sale__man {
 		margin-left: 5px;
@@ -435,21 +466,17 @@ body{
 		margin-left: 5px;
 	}
 	.slide2 {
-		margin: 0 0 0 25px;
-	}
+		margin: 0 0 0 50px;
 }
 @media only screen and (max-width: 465px){
 	.slide {
 	
-	right: auto;
-	left: 0;
-	margin: 0 0 0 25px;
+	margin: 0 85px 0 0;
 
 }
 .sale__line {
 		
-		
-		margin: -94px 0px 43px 10px;
+	margin: -94px 0px 43px 10px;
 	}
 }
 	
@@ -461,11 +488,7 @@ body{
 		margin: -94px 0px 43px 10px;
 	}
 	
-	.sale-item__coast {
-		right: auto;
-		left: 0;
-		margin: 10px 0 0 25px;
-	}
+	
 }
 .about {
 	
@@ -633,4 +656,8 @@ input[type=checkbox]:checked + label:before {
   background-origin: content-box;
   background-position: center;
 
+}
+.size {
+	color: #424242;
+	margin: 0;
 }
