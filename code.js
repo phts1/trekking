@@ -1,7 +1,6 @@
 let checkbox1 = document.getElementById('Men');
 let saleman = document.getElementById('Man');
 
-
 toggleFunc = function() {
 	if (!checkbox1.checked) {
 		saleman.style.display = 'none';
