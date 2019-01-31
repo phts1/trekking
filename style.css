@@ -338,11 +338,10 @@ text-transform: uppercase;
 	flex-wrap: wrap;
     justify-content: flex-start;  
 	width: 100%;
-	height: 352px;
+	height: 352px;	
 	background-color: #424242;
 }
 .trekking__lorem {
-	flex-basis: 300px;
 	position: absolute;
 	width: 340px;
 	height: 100px;
@@ -356,7 +355,6 @@ text-transform: uppercase;
 
 }
 .trekking__title {
-	
 	color: #ffffff;
 	font-family: "Quicksand Bold", ;
 	font-size: 20px;
@@ -543,7 +541,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .product__name {
-	position: absolute;
+	
 	bottom: 25px;
 	left: 25px;
 	color: #aa9b77;
@@ -553,7 +551,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .product__price {
-	position: absolute;
+	
 	bottom: 25px;
 	right: 25px;
 	color: #424242;
@@ -563,7 +561,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .product__size {
-	position: absolute;
+	
 	top: 25px;
 	left: 25px;
 	color: #424242;
@@ -573,14 +571,19 @@ input[type=checkbox]:checked + label:before {
 	cursor: pointer;
 }
 
+
 .product__size i {
 	color: #424242;
 	margin-left: 5px;
 }
-
-
+.product * {
+    position: absolute;
+}
+.product__colors {
+	position: static;
+}
 .colors__color {
-	position: absolute;
+
 	right: 25px;
 	cursor: pointer;
 	width: 25px;
@@ -601,12 +604,12 @@ input[type=checkbox]:checked + label:before {
 }
 .product__picture {
 	margin: auto;
-	position: absolute;
 	top: 0;
 	right: 0;
 	left: 0;
 	bottom: 0;
 }
+
 @media only screen and (max-width: 1000px) {
 	.product__price {
 		right: auto;
