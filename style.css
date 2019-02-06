@@ -5,8 +5,6 @@
 }
 
 body * {
-	
-	box-sizing: border-box;	
 	-webkit-font-smoothing: antialiased;
 }
 .main{
@@ -183,9 +181,7 @@ body * {
 	height: 143px;
 	background-color: #f5f6f7;
 }
-.content__checkbox1 {
-	margin:;
-}
+
 .content__label1 {
 
 	position: absolute;
@@ -273,17 +269,13 @@ body * {
 }
 
 .about {
-	
 	background-color: #aa9b77;
 	width: 100%;
     text-align: center;
     vertical-align: middle;
-    padding : 100px 0 100px 0;
-
-	
+    padding : 100px 0 100px 0;	
 }
 .about__lorem {
-	
 	text-align: center;
 	min-width:250px;
 	color: #424242;
@@ -292,12 +284,9 @@ body * {
 	font-weight: 600;
 	line-height: 24px;
 	letter-spacing: 3px;
-  
 }
 
 .about__border{
-
-	
   	margin: 0 auto;
     border: solid 3px #918363;
 	padding:50px;
@@ -305,112 +294,114 @@ body * {
 
 }
 .about__title{
-	
-color: #837659;
-font-family: "Quicksand Bold", ;
-font-size: 20px;
-font-weight: 600;
-text-transform: uppercase;
-  	padding: 0 1em;
-}
-.twitter_link {
-	position: relative;
-	color: #ffffff;
-	font-family: "Quicksand Bold", ;
-	font-size: 16px;
-	font-weight: 600;
-	padding: 27px 0 28px 80px;
-	margin-left: 40px;
-
-}
-.twitter_image {
-	position: absolute;
-	padding: 24px 20px 0 64px;
-	
-}
-.twitter {
-	position: relative;
-	width: 100%;
-	background-color: #535253;
-}
-.trekking {
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: flex-start;  
-	width: 100%;
-	height: 352px;	
-	background-color: #424242;
-}
-.trekking__lorem {
-	position: absolute;
-	width: 340px;
-	height: 100px;
-	margin: 146px 0 0 65px;
-	color: #ffffff;
-	font-family: "Quicksand Bold", ;
-	font-size: 10px;
-	font-weight: 600;
-	line-height: 20px;
-	text-transform: uppercase;
-
-}
-.trekking__title {
-	color: #ffffff;
+	text-align: center;
+	color: #837659;
 	font-family: "Quicksand Bold", ;
 	font-size: 20px;
-	font-weight: 400;
-	text-transform: uppercase;
-	margin: 109px 0 0 64px;
-}
-.menu2 {
-	list-style: none;
-	position: absolute;
-	right: 0;
-	margin: 154px 54px 0 0;
-}
-.menu2__link2 {
-	display: inline;
-	list-style-type: none;
-    text-decoration: none;
-	color: #ffffff;
-	font-family: "Quicksand Bold", ;
-	font-size: 14px;
 	font-weight: 600;
-	line-height: 28px;
 	text-transform: uppercase;
-	cursor: pointer;
+  	padding: 0 1em;
 }
-.trekking__by {
-	position: absolute;
-	right: 0;
-	margin: 184px 54px 0 0;
+.twitter {
+	display: flex;
+	justify-content: flex-start;
+	background-color: #535253;
+
+}
+.twitter__link {
+	padding-top: 29px;
 	color: #ffffff;
-	font-family: "Quicksand Bold", ;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 28px;
+	font-family: "Quicksand Bold", sans-serif ;
+	font-size: 16px;
+	font-weight: 600;
+	
+
 }
-.menu2__link3 {
+.twitter__image {
+	padding: 24px 20px 24px 64px;	
+}
+@media (max-width: 445px) {
+	.twitter {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.twitter__image {
+		padding:20px 0 0 0;
+	}
+	.twitter__link {
+		padding: 0 0 5px 10px;
+	}
+}
+.container-bottom {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	background-color: #424242;
+	font-family: 'Quicksand', sans-serif;
+}
+.trekking {
+  	line-height: 2;
+  	text-align: left;
+  	color: #ffffff;
+}
+.trekking__lorem {
+	font-family: 'QuicksandBold', sans-serif;
+	padding: 0 0 116px 65px;
+	text-transform: uppercase;
+    font-size: 10px;
+    width: 309px;
+    height: 90px;
+}
+.trekking__title {
+	padding: 109px 0 0 64px;
+	text-transform: uppercase;
+	font-weight: 600;
+    font-size: 20px;
+}
+.bottom-menu {
+	padding: 154px 65px 0 0;
+	text-transform: uppercase;
+	font-weight: 600;
+    font-size: 14px;
+    line-height: 2;
+    text-align: left;
+    color: #ffffff;
+}
+.bottom-menu__link {
+	display: inline-block;
+
+}
+.bottom-menu__link a {
+	list-style-type: none;
+	color: #ffffff ;
 	text-decoration: none;
 }
-
-.trekking__design li:not(:first-child):before {
+.design__by {
+	padding: 15px 66px 0 0;
+}
+.design li:not(:first-child):before {
     content: " | ";
     color: #aa9b77;
 }
-@media only screen and (max-width: 770px) {
-	.menu2 {
-		right: auto;
-		left: 0;
-		margin: 300px 0 0 55px;
+.design__by {
+	font-weight: 600;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: right;
+    color: #ffffff;
+}
+@media (max-width: 745px) {
+	.container-bottom {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
-	.trekking__by {
-		right: auto;
-		left: 0;
-		margin: 320px 0 0 135px;
+	.trekking__lorem, .trekking__title, .bottom-menu {
+		padding: 0;
+		padding-top: 30px;
+}
 
-	}
-	
 }
 input[type=checkbox], input[type=radio] {display: none;}
 
@@ -529,19 +520,13 @@ input[type=checkbox]:checked + label:before {
 	overflow: hidden;
   	box-sizing: border-box;
   	width: calc(1/3*100% - (1 - 1/3)*10px);
-  box-sizing: border-box;
- 
-  width: calc(1/3*100% - (1 - 1/3)*10px);
-
 }
-
 .product:hover {
 	border: 6px solid #aa9b77;
 	cursor: pointer;
 }
 
 .product__name {
-	
 	bottom: 25px;
 	left: 25px;
 	color: #aa9b77;
@@ -551,7 +536,6 @@ input[type=checkbox]:checked + label:before {
 }
 
 .product__price {
-	
 	bottom: 25px;
 	right: 25px;
 	color: #424242;
@@ -561,7 +545,6 @@ input[type=checkbox]:checked + label:before {
 }
 
 .product__size {
-	
 	top: 25px;
 	left: 25px;
 	color: #424242;
@@ -577,14 +560,30 @@ input[type=checkbox]:checked + label:before {
 	margin-left: 5px;
 }
 .product * {
-    position: absolute;
+	display: inline-block;
 }
-.product__colors {
-	position: static;
+.product__picture {
+	display: block;
+}
+.product {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.product__container--1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.product__container--2 {
+	justify-content: center;
+}
+.product__container--3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .colors__color {
-
-	right: 25px;
 	cursor: pointer;
 	width: 25px;
 	height: 25px;
@@ -596,11 +595,9 @@ input[type=checkbox]:checked + label:before {
 }
 .colors__color.colors__color--blue {
 	background-color: blue;
-	margin-right: 30px;
 }
 .colors__color.colors__color--black {
 	background-color: black;
-	margin-right: 60px;
 }
 .product__picture {
 	margin: auto;
@@ -659,4 +656,9 @@ input[type=checkbox]:checked + label:before {
 		bottom: 0;
 	}
 
+}
+@media (max-width: 370px) {
+	.about__border {
+    padding : 0;	
+}
 }
