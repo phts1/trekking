@@ -294,7 +294,7 @@ body * {
 
 }
 .about__title{
-	text-align: center;
+	margin: 0 auto;
 	color: #837659;
 	font-family: "Quicksand Bold", ;
 	font-size: 20px;
