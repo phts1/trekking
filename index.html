@@ -1,195 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <title>Trekking</title>
-      <link href="style.css" type="text/css" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-      <script
-           src="https://code.jquery.com/jquery-3.3.1.js"
-           integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-           crossorigin="anonymous"></script>
-   </head>
-   <body>
-      <div class="main">
-         <div class="main-overlay">
-         </div>
-         <div class="header">
+<head>
+    <meta charset="UTF-8">
+    <title>Trekking</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-overlay">
+        </div>
+        <div class="header">
             <div class="logo">
-               <a href="#"><img src="img/Logo.png" alt="logo"></a>
+                <a href="#"><img src="img/Logo.png" alt="logo"></a>
             </div>
             <div class="toggle">
 
-               <label for="toggle" class="toggle__menu">&#9776;</label>
-               <input type="checkbox" id="toggle"/>
-               <div class="menu">
-                  <a href="#" class="menu__link"><b>Home</b></a>
-                  <a href="#" class="menu__link"><b>Products</b></a>
-               </div>
+                <label for="toggle" class="toggle__menu">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu">
+                    <a href="#" class="menu__link"><b>Home</b></a>
+                    <a href="#" class="menu__link"><b>Products</b></a>
+                </div>
             </div>
             <div class="cart">
-               <a href="#" class="cart__link"><img src="img/cart.png" alt="logo"></a>
+                <a href="#" class="cart__link"><img src="img/cart.png" alt="logo"></a>
             </div>
-         </div>
-         <div class="maintext">
+        </div>
+        <div class="maintext">
             <h1 class="maintext__title"><b>Our clothing, your comfort</b></h1>
-            <p class="maintext__para"
-            >Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />Aut harum dolor, reprehenderit et nulla omnis laudantium<br />minus alias quos corporis.</p>
-         </div>
-         <div class="down">
+            <p class="maintext__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />Aut harum dolor, reprehenderit et nulla omnis laudantium<br />minus alias quos corporis.</p>
+        </div>
+        <div class="down">
             <a href="#1"><img src="img/down.png" alt=""></a></div>
-      </div>
+    </div>
     <div class="content" id="1">
-         <input type="checkbox" checked="true" id="Men" name="clothers" class="content__checkbox1"/>
-         <label for="Men" class="content__label1">Men</label>
-         <input type="checkbox" id="Women" name="clothers" class="content__checkbox2"/>
-         <label for="Women" class="content__label2">Women</label>
-         <input type="checkbox" id="Children" name="clothers" class="content__checkbox3"/>
-         <label for="Children" class="content__label3">Children</label>
-         <input type="button" value="See All Products" class="content__button" id="button1">
-      </div>
-      <div>
-         <div id="Man" class="category">
+        <input type="checkbox" checked="true" id="Men" name="clothers" class="content__checkbox1" />
+        <label for="Men" class="content__label1">Men</label>
+        <input type="checkbox" id="Women" name="clothers" class="content__checkbox2" />
+        <label for="Women" class="content__label2">Women</label>
+        <input type="checkbox" id="Children" name="clothers" class="content__checkbox3" />
+        <label for="Children" class="content__label3">Children</label>
+        <input type="button" value="See All Products" class="content__button" id="button1">
+    </div>
+    <div>
+        <div id="Man" class="category">
             <div class="category__name">
-               <span>Men</span><hr>
+                <span>Men</span>
+                <hr>
             </div>
             <div class="category__products">
-               <nav class="category__products-navigation">
-                  <p class="slider__page">1 / 5</p>
-                  <i class="fas fa-chevron-left"></i>
-                  <i class="fas fa-chevron-right"></i>
-               </nav>
-               <ul class="category__products-container">
-                  <li class="product">
-                     <div class="product__container--1">
-                        <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
-                        <div class="product__colors colors">
-                           <div class="colors__color colors__color--red"></div>
-                           <div class="colors__color colors__color--blue"></div>
-                           <div class="colors__color colors__color--black"></div>
+                <nav class="category__products-navigation">
+                    <p class="slider__page">1 / 5</p>
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </nav>
+                <ul class="category__products-container">
+                    <li class="product">
+                     <div class="product__lines lines">
+                        <div class="lines__line lines__line--up">
+                            <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
+                            <div class="product__colors colors">
+                                <div class="colors__color colors__color--red"></div>
+                                <div class="colors__color colors__color--blue"></div>
+                                <div class="colors__color colors__color--black"></div>
+                            </div>
+                        </div>
+                        <div class="lines__line lines__line--middle">
+                            <img src="product/l_1.png" class="product__picture">
+                        </div>
+                        <div class="lines__line lines__line--bottom">
+                            <p class="product__name">T-shirt</p>
+                            <p class="product__price">5,00 €</p>
                         </div>
                      </div>
-                     <div class="product__container--2">
-                        <img src="product/l_1.png" class="product__picture">
+                    </li>
+                    <li class="product">
+                     <div class="product__lines lines">
+                        <div class="lines__line lines__line--up">
+                            <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
+                        </div>
+                        <div class="lines__line lines__line--middle">
+                            <img src="product/l_2.png" class="product__picture">
+                        </div>
+                        <div class="lines__line lines__line--bottom">
+                            <p class="product__name">Pants Forclaz</p>
+                            <p class="product__price">30,00 €</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                     <div class="product__lines lines">
+                        <div class="lines__line lines__line--up">
+                            <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
+                        </div>
+                        <div class="lines__line lines__line--middle">
+                            <img src="product/l_3.png" class="product__picture">
+                        </div>
+                        <div class="lines__line lines__line--bottom">
+                            <p class="product__name">Backpack</p>
+                            <p class="product__price">60,00 €</p>
+                        </div>
                      </div>
-                     <div class="product__container--3">
-                        <p class="product__name">T-shirt</p>
-                        <p class="product__price">5,00&nbsp;€</p>
-                     </div>
-                  </li>
-                  <li class="product">
-                     <div class="product__container--1">
-                        <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
-                     </div>
-                     <div class="product__container--2">
-                        <img src="product/l_2.png" class="product__picture">
-                     </div>
-                     <div class="product__container--3">
-                        <p class="product__name">Pants Forclaz</p>
-                        <p class="product__price">30,00&nbsp;€</p>
-                     </div>
-                  </li>  
-                  <li class="product">
-                     <div class="product__container--1">
-                        <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
-                     </div>
-                     <div class="product__container--2">
-                        <img src="product/l_3.png" class="product__picture">
-                     </div>
-                     <div class="product__container--3">
-                        <p class="product__name">Backpack</p>
-                        <p class="product__price">60,00&nbsp;€</p>
-                     </div>
-                  </li>
-               </ul>
+                    </li>
+                </ul>
             </div>
-         </div>
-         <div id="Woman" class="category">
-            <div class="category__name">
-               <hr><span>Women</span>
+        </div>
+        <div id="Woman" class="category">
+            <div class="category__name category__name--align-right">
+                <hr><span>Women</span>
             </div>
-               <div class="category__products">
-                  <nav class="category__products-navigation">
-                     <p class="slider2-sum">1 / 5</p>
-                     <i class="fas fa-chevron-left"></i>
-                     <i class="fas fa-chevron-right"></i>
-                  </nav>
-                  <ul class="category__products-container">
-                  <li class="product">
-                     <div class="product__container--1">
-                        <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
+            <div class="category__products">
+                <nav class="category__products-navigation category__products-navigation--left">
+                    <p class="slider2-sum">1 / 5</p>
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </nav>
+                <ul class="category__products-container">
+                    <li class="product">
+                     <div class="product__lines lines">
+                        <div class="lines__line lines__line--up">
+                            <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
+                        </div>
+                        <div class="lines__line lines__line--middle">
+                            <img src="product/l_4.png" class="product__picture">
+                        </div>
+                        <div class="lines__line lines__line--bottom">
+                            <p class="product__name">Giacket</p>
+                            <p class="product__price">60,00 €</p>
+                        </div>
                      </div>
-                     <div class="product__container--2">
-                        <img src="product/l_4.png" class="product__picture">
+                    </li>
+                    <li class="product">
+                     <div class="product__lines lines">
+                        <div class="lines__line lines__line--up">
+                            <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
+                        </div>
+                        <div class="lines__line lines__line--middle">
+                            <img src="product/l_5.png" class="product__picture">
+                        </div>
+                        <div class="lines__line lines__line--bottom">
+                            <p class="product__name">Trecking Shoes</p>
+                            <p class="product__price">80,00 €</p>
+                        </div>
                      </div>
-                     <div class="product__container--3">
-                        <p class="product__name">Giacket</p>
-                        <p class="product__price">60,00&nbsp;€</p>
+                    </li>
+                    <li class="product">
+                     <div class="product__lines lines">
+                        <div class="lines__line lines__line--up">
+                            <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
+                            <div class="product__colors colors">
+                                <div class="colors__color colors__color--red"></div>
+                                <div class="colors__color colors__color--blue"></div>
+                            </div>
+                        </div>
+                        <div class="lines__line lines__line--middle">
+                            <img src="product/l_6.png" class="product__picture">
+                        </div>
+                        <div class="lines__line lines__line--bottom">
+                            <p class="product__name">T-shirt</p>
+                            <p class="product__price">20,00 €</p>
+                        </div>
                      </div>
-                  </li>
-               <li class="product">
-                  <div class="product__container--1">
-                     <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
-                  </div>
-                  <div class="product__container--2">
-                     <img src="product/l_5.png" class="product__picture">
-                  </div>
-                  <div class="product__container--3">
-                     <p class="product__name">Trecking Shoes</p>
-                     <p class="product__price">80,00&nbsp;€</p> 
-                  </div>
-               </li>
-               <li class="product">
-                  <div class="product__container--1">
-                     <p class="product__size">Size<i class="fas fa-angle-down"></i></p>
-                     <div class="product__colors colors">
-                        <div class="colors__color colors__color--red"></div>
-                        <div class="colors__color colors__color--blue"></div>
-                     </div>
-                  </div>
-                  <div class="product__container--2">
-                     <img src="product/l_6.png" class="product__picture">
-                  </div>
-                  <div class="product__container--3">
-                     <p class="product__name">T-shirt</p>
-                     <p class="product__price">20,00&nbsp;€</p>
-                  </div>
-               </li>
-            </ul>
-         </div>
-         </div>
-         <div class="about">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">
             <div class="about__us">
-               <fieldset class="about__border">
-                  <legend class="about__title">About Us</legend>
-                  <div class="about__lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Cumque minima adipisci iure placeat fuga inventore aspernatur<br> eaque, nulla voluptas illo. 
-                  </div>
-               </fieldset>
+                <fieldset class="about__border">
+                    <legend class="about__title">About Us</legend>
+                    <div class="about__lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Cumque minima adipisci iure placeat fuga inventore aspernatur<br> eaque, nulla voluptas illo.
+                    </div>
+                </fieldset>
             </div>
-         </div>
-         <div class="twitter">
+        </div>
+        <div class="twitter">
             <a href="#"><img src="img/Twitter.png" class="twitter__image"></a>
             <p class="twitter__link">“ E-commerce psd theme available ”</p>
-         </div>
-         <div class="container-bottom">
+        </div>
+        <div class="container-bottom">
             <div class="trekking">
-               <p class="trekking__title">Trekking</p>
-               <p class="trekking__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="trekking__title">Trekking</p>
+                <p class="trekking__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="design">
-               <ul class="bottom-menu">
-                  <li class="bottom-menu__link"><a href="#">credits</a></li>
-                  <li class="bottom-menu__link"><a href="#">privacy</a></li>
-                  <li class="bottom-menu__link"><a href="#">about</a></li>
-                  <li class="bottom-menu__link"><a href="#">contact</a></li>
-               </ul>
-               <p class="design__by">Design by gianluca cosetta</p>
-            </div>  
-         </div>
-     </div>
-   </body>
-      <script type="text/javascript" src="code.js"></script>
+                <ul class="bottom-menu">
+                    <li class="bottom-menu__link"><a href="#">credits</a></li>
+                    <li class="bottom-menu__link"><a href="#">privacy</a></li>
+                    <li class="bottom-menu__link"><a href="#">about</a></li>
+                    <li class="bottom-menu__link"><a href="#">contact</a></li>
+                </ul>
+                <p class="design__by">Design by gianluca cosetta</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="code.js"></script>
 </html>
-

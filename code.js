@@ -5,11 +5,14 @@ const salewoman = document.getElementById('Woman');
 const checkbox3 = document.getElementById('Children');
 const salechildren = document.getElementById('Сhildrenn');
 const toggle = function(param) {
-        if (param.checkbox && param.checkbox.checked) {
-            param.elementToDisplay.style.display = 'block';
-        } else {
-            param.elementToDisplay.style.display = 'none';
+        if (param.elementToDisplay !== null) {
+            if (param.checkbox && param.checkbox.checked) {
+                param.elementToDisplay.style.display = 'block';
+            } else {
+                param.elementToDisplay.style.display = 'none';
+            }
         }
+
 }
 const checkboxes = [{
         checkbox: checkbox1,
@@ -43,10 +46,16 @@ button1.addEventListener('click', () => {
         }
     }
     for (let i in checkboxes) {
-        (checkboxes[i].checkbox.checked = isToggleOn);
+        checkboxes[i].checkbox.checked = isToggleOn;
     }
 
-    for (let i in checkboxes) {
-		toggle(checkboxes[i]);
-    }
+    toggleAll();
 });
+
+const toggleAll = function () {
+    for (let i in checkboxes) {
+        toggle(checkboxes[i]);
+    }
+}
+
+toggleAll();
