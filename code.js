@@ -4,6 +4,9 @@ const checkbox2 = document.getElementById('Women');
 const salewoman = document.getElementById('Woman');
 const checkbox3 = document.getElementById('Children');
 const salechildren = document.getElementById('Сhildrenn');
+const checkbox4 = document.getElementById('Accessories');
+const saleaccessories = document.getElementById('Accessoriess');
+
 const toggle = function(param) {
         if (param.elementToDisplay !== null) {
             if (param.checkbox && param.checkbox.checked) {
@@ -26,17 +29,18 @@ const checkboxes = [{
         checkbox: checkbox3,
         elementToDisplay: salechildren
     },
+    {
+        checkbox: checkbox4,
+        elementToDisplay: saleaccessories
+    },
 ];
-checkbox1.addEventListener('change', (event) => {
-    toggle(checkboxes[0]);
-});
-checkbox2.addEventListener('change', (event) => {
-    toggle(checkboxes[1]);
-});
-checkbox3.addEventListener('change', (event) => {
-    toggle(checkboxes[2]);
-});
-const button1 = document.getElementById('button1');
+for (let i of checkboxes) {
+    i.checkbox.addEventListener('change', (event) => {
+        toggle(i);
+    });
+}
+
+const button1 = document.getElementById('content__button');
 button1.addEventListener('click', () => {
     let isToggleOn = false;
     for (let i in checkboxes) {
@@ -51,7 +55,6 @@ button1.addEventListener('click', () => {
 
     toggleAll();
 });
-
 const toggleAll = function () {
     for (let i in checkboxes) {
         toggle(checkboxes[i]);
