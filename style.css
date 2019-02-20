@@ -109,7 +109,7 @@ body * {
 .toggle__menu {
 	display: none;
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	top: 0;
 	right: 0;
 	margin: 10px 30px 30px 30px;
@@ -148,21 +148,16 @@ body * {
 
 	}
 	.menu__link {
-		
 		margin: 0 1px 0 0;
 	}
 
 	.logo {
 		display: block;
-		padding: 30px 0 0 30px;		
-		
-	}
-	
+		padding: 30px 0 0 30px;			
+	}	
 	#toggle:checked + .menu, .cart {
 		display: block;
-		
 	}
-	
 }
 @media only screen and (max-width: 360px)
 {
@@ -178,14 +173,11 @@ body * {
 }
 .content {
 	display: flex;
-	justify-content: space-between;
-	background-color: #f5f6f7;
-
-}
-.chck {
-	display: flex;
 	justify-content: flex-start;
+	background-color: #f5f6f7;
+	padding-left: 75px;
 }
+
 .content__label {
 	margin: 66px 20px 64px 19px;
 	color: #333333;
@@ -213,7 +205,11 @@ body * {
 	border: 0;
     cursor: pointer;
 } 
-@media only screen and (max-width: 970px) {
+
+.content__button--align-right {
+	margin-left:auto;
+}
+@media only screen and (max-width: 1070px) {
 	.content {
 		padding-left: 0;
 	}
@@ -225,7 +221,7 @@ body * {
 
 @media only screen and (max-width: 900px) {
 	.content__label {
-		margin: 66px 5px 64px 5px;
+		margin: 66px 5px 64px 19px;
 	}
 	.content__button {
 		margin-right: 20px; 
@@ -233,42 +229,33 @@ body * {
 	
 }
 
-
-@media only screen and (max-width: 785px) {
-	.chck {
-		
-		flex-direction: column;
-		align-content: center;
-		justify-content: flex-end;
-
-	}
-	.butt {
-		display: flex;
-		flex-direction: column;
-
-		justify-content: center;
-	}
-	.content__label {
-		
-	margin: 25px 90px 25px 19px;
-    
-    }
-    .content__button {
-		position: static;
-    }
-}
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 835px) {
 	.content {
 		flex-direction: column;
-		align-items: center;
+	}
+
+	.content__label {	
+		margin: 25px 0 0 96px;
+    }
+    .content__button--align-right {
+		margin-left:96px;
 	}
 }
+@media only screen and (max-width: 405px) {
+	.content__label {	
+		margin-left:46px;
+    }
+    .content__button--align-right {
+		margin-left:46px;
+	}
+}
+
 .about {
 	background-color: #aa9b77;
 	width: 100%;
     text-align: center;
     vertical-align: middle;
-    padding : 100px 0 100px 0;	
+    padding : 100px 0;	
 }
 .about__lorem {
 	text-align: center;
@@ -575,16 +562,22 @@ input[type=checkbox]:checked + label:before {
 	border-radius: 25px;
 }
 
-.colors__color.colors__color--red {
-	background-color: red;
-}
-
 .colors__color.colors__color--blue {
-	background-color: blue;
+	background-color: #165eb9;
 }
 
-.colors__color.colors__color--black {
-	background-color: black;
+.colors__color.colors__color--yellow {
+	background-color: #ffe637;
+}
+
+.colors__color.colors__color--grey {
+	background-color: #535253;
+}
+.colors__color.colors__color--coral {
+	background-color: #d3a7ac;
+}
+.colors__color.colors__color--white {
+	background-color: #ffffff;
 }
 
 .product__picture {
@@ -593,6 +586,7 @@ input[type=checkbox]:checked + label:before {
 	right: 0;
 	left: 0;
 	bottom: 0;
+	max-height: 250px;
 }
 
 @media only screen and (max-width: 890px) {

@@ -34,9 +34,9 @@ const checkboxes = [{
         elementToDisplay: saleaccessories
     },
 ];
-for (let i of checkboxes) {
-    i.checkbox.addEventListener('change', (event) => {
-        toggle(i);
+for (let i in checkboxes) {
+    checkboxes[i].checkbox.addEventListener('change', (event) => {
+        toggle(checkboxes[i]);
     });
 }
 
